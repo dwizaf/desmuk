@@ -6,18 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-    <link rel="stylesheet" href="../admin/style.css">
+    <link rel="stylesheet" href="../admin/css/admin.css">
     <title>Admin Dashboard</title>
 </head>
 
 <body>
     <div class="side-menu">
         <div class="brand-name">
+            <div class="title">
             <h2> Dinas Sosial Kota Surabaya</h2>
+            </div>
         </div>
         <ul>
+            <div class="title">
             <li><i class="fa fa-user-circle-o"> Admin</i></li>
+            </div>
             <li><i class="fa fa-folder-open-o"> Permohonan SKM</i></li>
+            <li><i class="fa fa-sign-out"> Logout</i></li>
             
             <!-- <li><img src="/admin/img/dashboard (2).png" alt="">&nbsp; <span>Dashboard Admin</span> </li>
             <li><img src="/admin/img/reading-book (1).png" alt="">&nbsp;<span>Students</span> </li>
@@ -30,22 +35,23 @@
     </div>
     <div class="container">
         <div class="header">
+            <i class="fa fa-tasks" aria-hidden="true"></i>
             <div class="nav">
                 <div class="search">
                     <input type="text" placeholder="Cari data ...">
                     <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
                 </div>
                 <div class="user">
-                    <a href="#" class="btn">Add New</a>
-                    <img src="/admin/img/notifications.png" alt="">
-                    <div class="img-case">
-                        <img src="/admin/img/user.png" alt="">
+                    <!-- <a href="#" class="btn">Add New</a> -->
+                    <i class="fa fa-bell" aria-hidden="true"></i>
+                    <div class="icon-case">
+                        <i class="fa fa-user-circle" aria-hidden="true"> ADMIN</i>
                     </div>
                 </div>
             </div>
         </div>
         <div class="content">
-            <div class="cards">
+            <!-- <div class="cards">
                 <div class="card">
                     <div class="box">
                         <h1>2194</h1>
@@ -82,64 +88,64 @@
                         <img src="/admin/img/income.png" alt="">
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="content-2">
                 <div class="recent-payments">
                     <div class="title">
-                        <h2>Recent Payments</h2>
-                        <a href="#" class="btn">View All</a>
+                        <h3>Data Pemohon</h3>
+                        <!-- <a href="#" class="btn">View All</a> -->
                     </div>
                     <table>
                         <tr>
-                            <th>Name</th>
-                            <th>School</th>
-                            <th>Amount</th>
-                            <th>Option</th>
+                            <th>No</th>
+                            <th>Nama Pemohon</th>
+                            <th>Tanggal Pengajuan</th>
+                            <th>Aksi</th>
+                            <th>Status Pengajuan</th>
                         </tr>
                         <tr>
-                            <td>John Doe</td>
-                            <td>St. James College</td>
-                            <td>$120</td>
-                            <td><a href="#" class="btn">View</a></td>
+                            <td>1</td>
+                            <td>Isabella Kurnia Putri</td>
+                            <td>2022 - 05 - 21</td>
+                            <td><a href="#" class="btn">Detail</a></td>
+                            <td>[Menunggu]</td>
                         </tr>
                         <tr>
-                            <td>John Doe</td>
-                            <td>St. James College</td>
-                            <td>$120</td>
-                            <td><a href="#" class="btn">View</a></td>
+                            <td>2</td>
+                            <td>Kylie Jenner</td>
+                            <td>2022 - 04 - 15</td>
+                            <td><a href="#" class="btn">Detail</a></td>
+                            <td>[Selesai]</td>
                         </tr>
                         <tr>
-                            <td>John Doe</td>
-                            <td>St. James College</td>
-                            <td>$120</td>
-                            <td><a href="#" class="btn">View</a></td>
+                            <td>3</td>
+                            <td>Jefry Nichole</td>
+                            <td>2022 - 03 - 29</td>
+                            <td><a href="#" class="btn">Detail</a></td>
+                            <td>[Ditolak] Dokumen yang dilampirkan tidak sesuai</td>
                         </tr>
                         <tr>
-                            <td>John Doe</td>
-                            <td>St. James College</td>
-                            <td>$120</td>
-                            <td><a href="#" class="btn">View</a></td>
-                        </tr>
-                        <tr>
-                            <td>John Doe</td>
-                            <td>St. James College</td>
-                            <td>$120</td>
-                            <td><a href="#" class="btn">View</a></td>
-                        </tr>
-                        <tr>
-                            <td>John Doe</td>
-                            <td>St. James College</td>
-                            <td>$120</td>
-                            <td><a href="#" class="btn">View</a></td>
+                            <td>4</td>
+                            <td>Algazali Iskandar</td>
+                            <td>2022 - 02 - 16</td>
+                            <td><a href="#" class="btn">Detail</a></td>
+                            <td>[Ditolak] Pemohon tidak berhak mendapatkan SKM</td>
                         </tr>
                     </table>
                 </div>
-                <div class="new-students">
+
+                <!-- <div class="col-sm-12">
+                   Showing 51 to 57 of 57 entries
+                </div> -->
+            </div>
+
+
+                <!-- <div class="new-students">
                     <div class="title">
                         <h2>New Students</h2>
                         <a href="#" class="btn">View All</a>
-                    </div>
-                    <table>
+                    </div> -->
+                    <!-- <table>
                         <tr>
                             <th>Profile</th>
                             <th>Name</th>
@@ -166,7 +172,7 @@
                             <td><img src="/admin/img/info.png" alt=""></td>
                         </tr>
 
-                    </table>
+                    </table> -->
                 </div>
             </div>
         </div>
