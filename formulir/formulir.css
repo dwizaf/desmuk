@@ -100,7 +100,7 @@ ul {
 
   input[type=text], select {
     width: 100%;
-    padding: 12px 20px;
+    padding: 12px 50px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
@@ -148,7 +148,6 @@ ul {
     display:block;
     padding:8px;
     padding-left:30px;
-    /* width:100%; */
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -166,10 +165,7 @@ ul {
     background-color: initial;
     cursor: default;
     appearance: auto;
-    /* box-sizing: border-box; */
     margin: 3px 3px 0px 0px;
-    /* padding: initial; */
-    /* border: initial; */
 }
    
   .border{
