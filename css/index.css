@@ -1,16 +1,33 @@
 * {
   box-sizing: border-box;
 }
-/* body {
-  font-size: 14px;
-  
-} */
+
 img {
   width: 250px;
   height: 250px;
   margin-top: 50px;
   margin-left: 25px;
   margin-right: 25px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  background-color: #334257;
+  text-align: center;
+}
+
+li {
+  float: right;
+  font-size: large;
+}
+
+li sosmed{
+  float: right;
+  margin-right: 40px;
+  position: absolute;
 }
 
 .title {
@@ -29,7 +46,40 @@ img {
   font-size: 30px;
 }
 
-input[type=text], select {
+.font1{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #6d6d6d;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.font2{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(77, 77, 248);
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.font2:hover{
+  color: rgb(51, 51, 180);
+  text-decoration: underline;
+}
+
+.font3{
+  color: red;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.font4{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #6d6d6d;
+  font-size: 17px;
+  margin: 50px;
+}
+
+input[type=email], select {
   width: 60%;
   padding: 12px 50px;
   margin: 8px 0;
@@ -42,33 +92,37 @@ input[type=text], select {
   outline-style: outset;
 }
 
+input[type=password], select {
+  width: 60%;
+  padding: 12px 50px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: left;
+  outline-color: #ccc;
+  outline-style: outset;
+}
 
-
-input[type=submit] {
-  /* width: 100%; */
+input[type=submit]{
   background-color: #548CA8;
   color: white;
   padding: 14px 20px;
   margin: 8px;
-  margin-top: 15%;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   outline-color: #495d79;
   outline-style: outset;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration: none;
 }
 
 input[type=submit]:hover {
   background-color: #334257;
   color: white;
 }
-
-/* .formulir {
-  border-radius: 5px;
-  margin-left: 800px;
-  margin-right: 800px;
-  background-color: #ffffff;
-} */
 
 form,form .input-icon{width:100%;}
 form .input-icon{position: relative;}
@@ -84,7 +138,6 @@ form input{
   display:block;
   padding:8px;
   padding-left:30px;
-  /* width:100%; */
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -101,8 +154,6 @@ form input+i{
 .checkbox {
 width: 40%;
 padding: 12px;
-margin-left: 105px;
-float: left;
 text-align: left;
 background-color: #ffffff;
 border: 1px solid #ccc;
@@ -110,6 +161,16 @@ border-radius: 4px;
 box-sizing: border-box;
 outline-color: rgb(165, 162, 162);
 outline-style: outset;
+}
+hr {
+border: 0;
+width: 720px;
+border-top: 2px solid #6d6d6d;
+}
+.hr1 {
+border: 0;
+width: 1000px;
+border-top: 2px solid #6d6d6d;
 }
 
 .down {
@@ -122,20 +183,20 @@ background-color: #334257;
 }
 
 .dinsos{
-float: left;
-margin-left: 30px;
-padding: 20px;
-position: absolute;
+/* float: left; */
+margin-left: 40px;
+padding-top: 20px;
+/* position: absolute; */
 color: rgb(245, 255, 155);
 font-size: large;
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .salam{
-float: left;
-padding: 20px;
-margin-top: 40px;
-margin-left: 30px;
+/* float: left; */
+/* padding: 20px; */
+/* margin-top: 40px; */
+margin-left: 40px;
 color: white;
 }
 
@@ -151,7 +212,36 @@ border-radius: 15px;
 background-color: #f2f2f2;
 padding: 20px;
 width: 550px;
-/* margin-left: 400px; */
-/* margin-right: 400px; */
 margin-top: 20px;
+}
+
+button{
+background-color: #2a363b;
+color: white;
+padding: 16px 20px;
+margin: 8px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+outline-color: #495d79;
+outline-style: outset;
+}
+
+button:hover{
+background-color: #334257;
+color: white;
+}
+
+.footer {
+position: relative;
+left: 0;
+bottom: 0;
+width: 100%;
+background-color: #334257;
+color: white;
+}
+.footeright {
+text-align:right;
+margin-right: 40px;
+padding-bottom: 30px;
 }
