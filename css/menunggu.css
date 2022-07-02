@@ -273,6 +273,9 @@ button:hover {
   color: rgb(14, 138, 14);
 }
 
+.color2 {
+  color: red;
+}
 .terbit, .terbit a {
   text-decoration: none;
   background-color: rgb(14, 138, 14);
