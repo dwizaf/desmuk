@@ -2,12 +2,12 @@
 <html lang="en">
     <head>
       <title>Formulir Pengajuan</title>
-      <link rel="stylesheet" type="text/css" href="formulir.css">
+      <link rel="stylesheet" type="text/css" href="../css/formulir.css">
       <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
     </head>
     <body>
         <ul>
-            <img src="Group 4.svg">
+            <img src="../assets/img/Group 4.svg">
             <li><a href="../menunggu/selesai.html">Selesai</a></li>
             <li><a href="../menunggu/menunggu.html">Menunggu</a></li>
             <li><a class="active" href="formulir.html">Pengajuan</a></li>
@@ -44,7 +44,7 @@
               <br><br>
 
               <div class="formulir">
-                <form action="">
+                <form action="../menunggu/menunggu.html">
                   <label for="NIK">NIK PEMOHON</label>
                   <div class="input-icon">
                     <input type="number" id="NIK" name="firstname" placeholder="NIK" required>
@@ -61,15 +61,6 @@
                   <div class="input-icon border">
                     <input type="file" id="scan" name="files" max="2" accept="image/*, .pdf" required>
                     <i class="fa fa-file"></i>
-                    <script type="text/javascript">
-                      var uploadField = document.getElementById("scan");
-                      uploadField.onchange = function() {
-                          if(this.files[0].size > 2000000){ // ini untuk ukuran 800KB, 1000000 untuk 1 MB.
-                             alert("Maaf, File Terlalu Besar !!");
-                             this.value = "";
-                          };
-                      };
-                      </script>
                   </div><br>
                   
                   <p>KEPERLUAN SKM</p>
@@ -95,42 +86,7 @@
                     <i class="fa fa-crate-empty"></i>
                   </div>
                   <script>
-                    document.getElementById("lain").addEventListener("click", displaylain);
-                    function displaylain(){
-                      if(document.getElementById("lain").checked===true){
-                        document.getElementById("lainbox").hidden=false
-                      }
-                    }
-                    document.getElementById("denda").addEventListener("click", displaydenda);
-                    function displaydenda(){
-                      if(document.getElementById("denda").checked===true){
-                        document.getElementById("lainbox").hidden=true
-                      }
-                    }
-                    document.getElementById("rusun").addEventListener("click", displayrusun);
-                    function displayrusun(){
-                      if(document.getElementById("rusun").checked===true){
-                        document.getElementById("lainbox").hidden=true
-                      }
-                    }
-                    document.getElementById("ringan").addEventListener("click", displayringan);
-                    function displayringan(){
-                      if(document.getElementById("ringan").checked===true){
-                        document.getElementById("lainbox").hidden=true
-                      }
-                    }
-                    document.getElementById("hukum").addEventListener("click", displayhukum);
-                    function displayhukum(){
-                      if(document.getElementById("hukum").checked===true){
-                        document.getElementById("lainbox").hidden=true
-                      }
-                    }
-                    document.getElementById("pendidikan").addEventListener("click", displaypendidikan);
-                    function displaypendidikan(){
-                      if(document.getElementById("pendidikan").checked===true){
-                        document.getElementById("lainbox").hidden=true
-                      }
-                    }
+                    
                   </script>
                   <br><br><br>
 
@@ -144,15 +100,6 @@
                   <div class="input-icon border">
                     <input type="file" id="scan1" name="files" required>
                     <i class="fa fa-file"></i>
-                    <script type="text/javascript">
-                      var uploadField = document.getElementById("scan1");
-                      uploadField.onchange = function() {
-                          if(this.files[0].size > 2000000){ // ini untuk ukuran 800KB, 1000000 untuk 1 MB.
-                             alert("Maaf, File Terlalu Besar !!");
-                             this.value = "";
-                          };
-                      };
-                      </script>
                   </div><br>
 
                   <p>ALAMAT TEMPAT TINGGAL SAAT INI</p>
@@ -166,28 +113,16 @@
                     <input type="text" id="" name="nohp" placeholder="Alamat Pemohon">
                     <i class="fa fa-map-pin"></i>
                   </div>
-                  <script>
-                    document.getElementById("beda").addEventListener("click", display);
-                    function display(){
-                      if(document.getElementById("beda").checked===true){
-                        document.getElementById("box").hidden=false
-                      }
-                    }
-                    document.getElementById("sama").addEventListener("click", displaysama);
-                    function displaysama(){
-                      if(document.getElementById("sama").checked===true){
-                        document.getElementById("box").hidden=true
-                      }
-                    }
-                  </script>
                   <br><br>
                   
-                  <input type="submit" value="Submit" href="../menunggu/menunggu.html">
+                  <input type="submit" value="Submit">
                
                   
                 
                 </form>
               </div>
+
+              <script src="../javascript/formulir.js"></script>
               <div class="footer">
                 <p class="dinsos"><strong> DINAS SOSIAL KOTA SURABAYA</strong></p>
                 <p class="salam">Salam Pengabdian.</p>
